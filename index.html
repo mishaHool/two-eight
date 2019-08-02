@@ -6,16 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-        function countImg(){
-        while(b != 0){
         var b = document.getElementsByTagName("img").length;
         var c = document.getElementsByTagName("img");
-        c.onload = "b--";
-    }
-    }
-
-    document.onload = "countImg()";
-    alert("All Loaded")
+    c.onload = alert("All loaded");
     </script>
 </head>
 <body>
