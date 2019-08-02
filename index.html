@@ -6,25 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
+        function countImg(){
         while(b != 0){
         var b = document.getElementsByTagName("img").length;
         var c = document.getElementsByTagName("img");
-    function countImg(){
         c.onload = "b--";
     }
-    
-    countImg();
     }
-    alert("all images are loaded");
+
+    document.onload = "countImg()";
+    alert("All Loaded")
     </script>
 </head>
 <body>
     <input type="text" id="numb" >
 
-    <img src="photo2.jpg" alt="" width="100px" height="100px">
-    <img src="photo2.jpg" alt="" width="100px" height="100px">
-    <img src="photo3.jpg" alt="" width="100px" height="100px">
-    <img src="photo3.jpg" alt="" width="100px" height="100px">
+    <img src="photo2.jpg" alt="" width="100px" height="100px" onerror="console.log(this.src)">
+    <img src="photo2.jpg" alt="" width="100px" height="100px" onerror="console.log(this.src)">
+    <img src="photo3.jpg" alt="" width="100px" height="100px" onerror="console.log(this.src)">
+    <img src="photo3.jpg" alt="" width="100px" height="100px" onerror="console.log(this.src)">
 
     <script>
         
@@ -40,7 +40,7 @@
         //     a.value = arr;
         // }
     
-    
+
     
     
     
