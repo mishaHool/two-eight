@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     header{
+        width: 100%;
+        height: 300px;
+        border: 3px solid;
+    } 
+    
+    main{
+width: 100%;
+height: 500px;
+    }
+
+    footer{
+width: 100%;
+height: 300px;
+} 
+
+    
+    </style>
+</head>
+<body>
+    <header id="head">
+
+
+    </header>
+
+        <div id="mainer">
+
+    <input type="text" placeholder="input the color of site" id="color">
+
+    <ul>
+    <li> <button id="header" onclick="showHeadd()">header</button></li>
+    
+    <li> <button id="main" onclick="showMain()">main</button></li>
+
+    <li> <button id="foot" onclick="showFoot()">footer</button></li>
+    
+    <li> <button id="add" onclick="showAdd()">add-tags</button></li>
+
+    </ul>
+
+    <ul>
+    <li> <button id="a" onclick="showA()"  style="display: none;">a</button></li>
+    <li> <button id="p" onclick="showP()" style="display: none;">p</button></li>
+    <li> <button id="pre" onclick="showPre()" style="display: none;">pre</button></li> 
+        </ul>
+    </div>
+
+    <footer id="footer">
+        <a href="#" style="display: none;" id="aa">simplelink.com</a>
+        <p style="display: none;" id="pp">viverra tellus in hac habitasse platea dictumst vestibulum rhoncus
+            est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget
+            arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed
+            lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas
+            purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu
+            bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet
+            bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam
+            pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget
+            velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat
+            ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu
+            scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse
+            interdum consectetur libero id faucibus nisl tincidunt eget nullam non nisi est sit amet facilisis
+            magna etiam tempor orci eu lobortis elementum nibh tellus molestie nunc non blandit massa enim nec
+            dui nunc mattis enim ut tellus elementum sagittis vitae et leo</p>
+            <pre id="pree" style="display: none;">
+                |________|
+               /  _    _  \ 
+              /  |_|  |_|  \ 
+             /              \ 
+            / \___________/  \ 
+           /                  \ 
+          /____________________\ 
+        </pre>
+    </footer>
+
+    <script>
+        var head = document.getElementById('header');
+        var headd = document.getElementById("head");
+        var main = document.getElementById("main");
+        var mainn = document.getElementById("mainer");
+        var foot = document.getElementById("foot");
+        var foott = document.getElementById("footer");
+        var input = document.getElementById("color");
+        var add = document.getElementById("add");
+        var a = document.getElementById("a");
+        var aa = document.getElementById("aa");
+        var pre = document.getElementById("pre");
+        var pree = document.getElementById("pree");
+        var p = document.getElementById("p");
+        var pp = document.getElementById("pp");
+
+        headd.style.display = "none";
+        foott.style.display = "none";
+
+
+        function showHeadd(){
+          headd.style.display = "block"; 
+          headd.style.borderColor = "input.value";
+        }
+        function showMain(){
+            mainn.style.border = "3px solid input.value";
+ 
+        }
+        function showFoot(){
+            foott.style.display = "block"; 
+            foott.style.border = "3px solid red";
+
+        }
+        function showAdd(){
+            pre.style.display = "inline";
+            a.style.display = "inline";
+            p.style.display = "inline";
+        }
+        
+        function showPre(){
+            pree.style.display = "block"
+        }
+        function showA(){
+            aa.style.display = "inline"
+        }
+        function showP(){
+            pp.style.display = "block"
+        }
+
+    </script>
+</body>
+</html>
